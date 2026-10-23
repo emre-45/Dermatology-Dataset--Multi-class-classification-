@@ -11,7 +11,7 @@ Classifying six erythemato-squamous skin diseases from 34 clinical and histopath
 
 ## Approach
 
-1. Exploratory analysis of feature distributions per class (see `dermatology_eda.html`)
+1. Exploratory analysis of feature distributions per class
 2. Stratified 80/20 train/test split
 3. Preprocessing: median imputation and 4-bin discretization of `age`
 4. Decision Tree, Random Forest and Gradient Boosting, tuned with `RandomizedSearchCV` (60 iterations, 5-fold stratified CV, refit on macro F1)
@@ -30,7 +30,6 @@ Random Forest on the test set: accuracy 0.959, macro F1 0.943, weighted ROC AUC 
 ## Files
 
 - `dermatology_final.ipynb`: full notebook (EDA, tuning, evaluation)
-- `dermatology_eda.html`: exported EDA report
 - `dermatology_database_1.csv`: dataset
 
 ## Requirements
